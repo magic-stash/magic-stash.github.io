@@ -16,6 +16,7 @@
 
 :root {
   box-sizing: border-box;
+  line-height: 1;
   text-align: center;
 }
 
@@ -24,7 +25,7 @@ a {
   text-decoration: inherit;
 }
 
-button {
+.button {
   cursor: pointer;
   outline: none;
 }
@@ -45,6 +46,12 @@ main {
   background-color: #6b43a9;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Layout =================================================================== */
 
 h1 {
@@ -57,7 +64,13 @@ nav {
   padding-bottom: 2.4rem;
 }
 
-button {
+.button {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+}
+
+.download-meta {
+  display: inline-block;
   margin-bottom: 2.4rem;
 }
 
@@ -68,9 +81,9 @@ h1 {
 }
 
 h2 {
+  color: #cbbde1;
   font-size: 2.0rem;
   font-style: oblique;
-  opacity: 0.5;
 }
 
 /* Main ===================================================================== */
@@ -84,7 +97,7 @@ main {
   background-size: 712px 422px;
 }
 
-button {
+.button {
   padding: 1.0rem 7.0rem;
 
   background-color: transparent;
@@ -92,6 +105,12 @@ button {
   border-radius: 4px;
 
   font-size: 1.6rem;
+}
+
+.download-meta {
+  color: #cbbde1;
+  font-size: 1.4rem;
+  font-style: oblique;
 }
 
 nav {
